@@ -9,9 +9,10 @@ const refs = {
 
 refs.input.addEventListener('change', onInputChange);
 refs.input.addEventListener('change', changeLocalStorage);
+
 function onInputChange() {
-  const check = refs.input.checked;
-  if (check) {
+  // const check = refs.input.checked;
+  if (refs.input.checked) {
     refs.bodyEl.classList.add(Theme.DARK);
     refs.bodyEl.classList.remove(Theme.LIGHT);
   } else {
@@ -20,8 +21,8 @@ function onInputChange() {
   }
 }
 function changeLocalStorage() {
-  const check = refs.input.checked;
-  if (check) {
+  // const check = refs.input.checked;
+  if (refs.input.checked) {
     localStorage.setItem('theme', Theme.DARK);
   } else {
     localStorage.removeItem('theme');
