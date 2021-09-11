@@ -1,7 +1,6 @@
 import items from './menu.json';
 import menuItemTpl from './templates/menu-item.hbs';
 const menuGallery = document.querySelector('.js-menu');
-const toolbarRef = document.querySelector('.toolbar');
 
 const themeSwitch = document.querySelector('.theme-switch');
 
